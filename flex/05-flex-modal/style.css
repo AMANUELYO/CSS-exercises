@@ -10,7 +10,7 @@ body {
   background: #aaa;
   color: #333;
   /* I'll give you this one for free lol */
-  display: flex;
+  display:flex ;
   align-items: center;
   justify-content: center;
 }
@@ -20,6 +20,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  gap: 16px;
+  display: flex;
+flex-direction: column;
+gap:0;
 }
 
 .icon {
@@ -33,7 +37,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  margin-left: 0.5em;
+  gap: 0;
+  margin-bottom: -16px;
 }
+
 
 .close-button {
   background: #eee;
@@ -48,6 +57,10 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  flex-shrink: 0;
+  margin-right: 0.5em;
+  gap: 0;
+  margin-bottom: -16px;
 }
 
 button {
@@ -66,4 +79,28 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+.container{
+  display: flex;
+  margin-top: 1em;
+  gap: 0.5em;
+  margin-bottom :0.75em;
+
+}
+.text{
+   margin-bottom: 1em;
+   text-align: left;
+   
+}
+.info{
+  padding:0 2.5em 0 4em;
+  font-weight:500;
+}
+.header{
+  margin:0.25em auto -16px 0;
+  font-weight: bold;
+  font-size: 1.25rem;
+
 }
